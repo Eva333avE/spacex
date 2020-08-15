@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #010001;
   color: #fff;
-  margin: 0;
   font-family: "Roboto", sans-serif;
-  padding-top: 53px;
-  /* overflow-x: hidden; */
+  padding-top: 53px;  
 }
 
 .header {
@@ -228,6 +232,7 @@ body {
 }
 @media (max-width: 576px) {
   .rocket {
+    transform: translate3d(0,0,0) !important;
     max-width: 80px;
     position: static;
     margin: 50px;
@@ -258,14 +263,16 @@ body {
   }
   .features {
     padding-top: 10px;
-    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+
   }
   .table {
-    margin: 0 auto; /* центруем по горизонитали внешними отступами */
+    margin: 0 auto; 
     text-align: center;
   }
   .features-title {
-    text-align: center;
+    align-self: center;
     max-width: 338px;
     margin-top: 45px;
   }
